@@ -98,7 +98,11 @@ header .mobile  {
 /* Hero Section Styles */
 .hero {
     position: relative;
-    background-image:url("images/quickfadeup.png"),url("images/sea.jpeg");
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), /* transparent gradient */
+    url("images/quickfadeup.png"),
+    url("images/sea.jpeg");
+background-size: cover;
     background-size: cover;
     background-position: center;
     width: 100%;
