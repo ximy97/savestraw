@@ -98,7 +98,7 @@ header .mobile  {
 /* Hero Section Styles */
 .hero {
     position: relative;
-    background-image: url("../SaveStraws/images/quickfadeup.png") ,url("../SaveStraws/images/sea.jpeg");
+    background-image: url("images/quickfadeup.png") ,url("images/sea.jpeg");
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -111,7 +111,7 @@ header .mobile  {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../SaveStraws/images/quickfade.jpeg");
+    background-image: url("images/quickfade.jpeg");
     background-size: cover;
     background-position: center;
     
@@ -177,7 +177,7 @@ z-index: 3;
 
 /* Add a repeating background image */
 .history img {
-    background-image: url('../SaveStraws/images/mangojuice.png');
+    background-image: url('images/mangojuice.png');
     background-repeat: repeat;
 }
 
