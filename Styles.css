@@ -1,0 +1,459 @@
+/* everything related to the links */
+@import url("https://use.typekit.net/vnv7doa.css");
+
+body,html {
+    margin: 0;
+    padding: 0;
+  }
+
+a {
+    color: rgb(186, 254, 255);
+    text-decoration: none;
+    font-size:30px;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    border-radius: 8px;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+
+  a:hover {
+    box-shadow: inset 250px 0 0 0 #54b3d6;
+    color: white;
+    border-radius: 8px;
+  }
+
+
+
+/*nav section */
+.navigation {
+    position: absolute;
+    top:0;
+    right:0;
+    left: 0;
+    font-size: larger;
+    font-family: "oswald", sans-serif;
+font-weight: 400;
+font-style: normal;
+margin-bottom: 15px;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 10px 0;
+    display: flex;
+   justify-content: center;
+   flex-wrap: wrap; 
+    text-shadow: 2px 2px #015571;
+}
+
+.navigation ul li {
+   margin: 0 60px;/* Adjust spacing between navigation items */
+}
+header .mobile  {
+    display: none;
+ }
+
+
+ 
+/* RESPONSIVE RULES 
+@media screen and (max-width: 700px) {
+    .navigation .mobile {
+        display:inline-block;
+   }     
+}
+
+@media and (max-width:400px) {
+    .navigation {
+        display: block;
+    body {
+        font-size: smaller;
+    }
+   } 
+    
+}
+*/
+
+
+/* keyframes animation for scale-up */
+@keyframes scaleUpAnimation {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1.5);
+    }
+}
+
+/*animation to the .scale-up class */
+.scale-up {
+    transform: scale(0);
+    animation: scaleUpAnimation 1s ease forwards;
+    text-align: center; /* Center horizontally */
+    display: inline-block; /* Maintain vertical centering */
+    margin-right: 300px; /* Center horizontally */
+}
+
+
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    background-image: url("../SaveStraws/images/quickfadeup.png") ,url("../SaveStraws/images/sea.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh; /*size of the image */
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 828px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../SaveStraws/images/quickfade.jpeg");
+    background-size: cover;
+    background-position: center;
+    
+}
+.hero-content h1{
+    font-family: "omnium-tagline", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 125px;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    color: rgb(216, 255, 243);
+
+}   
+
+/*index page*/
+.hero-content p {
+    
+    font-family: "oswald", sans-serif;
+    font-weight: 200;
+    font-style: bold;
+    font-size: 30px;
+    
+    color:#54b3d6;
+    padding-top: -180px;
+    padding-bottom: 50px;
+    position:relative;
+    text-align: center;
+    z-index: 1;
+    margin-left: 100px;
+    margin-right: 100px;
+
+} 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 90px;
+    margin-left: 500px;
+z-index: 3;
+}   
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+
+} 
+
+.grid-item img {
+    max-width: 950%;
+    height: auto;
+z-index: 3;
+} 
+
+
+/*history section*/
+
+/* Add a repeating background image */
+.history img {
+    background-image: url('../SaveStraws/images/mangojuice.png');
+    background-repeat: repeat;
+}
+
+/* Add styles for the white section */
+.white-section {
+    background-color: white;
+    padding: 50px; /* Adjust padding as needed */
+}
+
+/* Rest of your existing CSS styles */
+
+
+.history {
+    display: flex;
+    flex-direction: row;
+    padding: 200px; /*distance between nav and pictures */
+    flex-wrap: wrap; 
+} 
+.history h1 {
+    font-family: "omnium-tagline", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 200px;
+    color:#0d6968;
+    text-shadow: 6px 6px #015571;
+    margin-bottom: 10px;
+    margin-top: -130px;
+    margin-left: 80px;
+    margin-right: 80px
+  
+    text center;
+
+   
+} 
+
+.history h2{
+    font-family: "oswald", sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    font-style: bold;
+    margin-bottom: 10px;
+    margin-left: 80px;
+    margin-right: 80px
+   
+} 
+.history p{
+    font-family: "oswald", sans-serif;
+    font-weight: 200;
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-left: 80px;
+    margin-right: 80px
+   
+} 
+/*issues section (materials) */
+.materials {
+    display: flex;
+    flex-direction: row;
+    padding: 150px; /*distance between nav and pictures */
+    flex-wrap: wrap;
+}   
+
+.materials figure { /*text modifs*/
+   margin: auto;
+   width: 300px;
+   font-family: "oswald", sans-serif;
+   font-weight: 200;
+   font-style: normal;
+   font-size: 20px;
+   text-align:center; 
+}   
+.materials figure figcaption {
+    font-family: "oswald", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   text-transform: uppercase;
+   padding-top: 20px;
+}
+
+.materials figure img {
+    width: 300px;
+    border-radius: 20%;
+    box-shadow: gray 0 0 10px;
+}   
+
+/* adopt section*/
+.adopt {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Header, Main Content, Footer */
+    min-height: 95vh;
+}
+
+.adopt header {
+   margin-top: 7%;
+    padding: 0%;
+    text-align: center;
+    font-family: "oswald", sans-serif;
+    font-weight: 400;
+    font-size: 260%;
+    color: #c0f9ff;
+    background-color: #54b3d6;
+    
+    font-family: "omnium-tagline", sans-serif;
+font-weight: 700;
+font-style: normal;
+text-transform: uppercase;
+}
+
+.adopt-section header h1 {
+    
+    margin: 0%;
+    padding: 0%;
+    color: white;
+    
+}
+
+.adopt main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0%;
+}
+.adopt h2 {
+    
+    font-family: "oswald", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+
+    
+}
+.adopt p {
+    
+    font-family: "oswald", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+}
+
+.adopt-section {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.adopt-section img {
+    margin-top: -850px;
+    width: 900px;
+    border-radius: 50%;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #4ca3af;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: #0d6968;
+}
+.how-to-adopt {
+    background-color:#add8e6;
+    border-radius: 10px;
+    padding: 30px;
+    color: #ffffff;
+    margin: 500px;
+    margin-top: -20px;
+  margin-bottom: -10px;
+    
+ 
+}
+.how-to-adopt h2{
+    
+    color: #ffffff;
+    font-family: "omnium-tagline", sans-serif;
+font-weight: 700;
+font-style: normal;
+text-transform: uppercase;
+font-size: 60px;
+ 
+}
+
+.how-to-adopt ol {
+   
+    font-family: "oswald", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 30px;
+    
+ 
+}
+
+
+.adoption-form {
+    background-color: #4ca3af;
+    border-radius: 10px;
+    padding: 30px;
+    color: #c0f9ff;
+    font-family: "oswald", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 30px;
+    margin: 290px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+ 
+}
+.adoption-form h2{
+    
+    color: #ffffff;
+    font-family: "omnium-tagline", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 60px;
+ 
+}
+
+
+
+
+
+
+/* Animation classes */
+.show-on-scroll {
+    opacity: 0;
+    transform: translateY(50%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Styles */
+.footer {
+    background-color: #add8e6; /* Pale ocean color */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 10%;
+    position:fixed;
+    z-index: 1;
+}
+
+.footer {
+    font-family: "oswald", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+    
+   
