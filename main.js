@@ -1,3 +1,17 @@
+//menu scrolled
+window.addEventListener('scroll', function() {
+    const navSection = document.querySelector('.navSection');
+  
+    // Check if the scroll position is greater than a specific threshold (adjust as needed)
+    if (window.scrollY > 50) {
+      navSection.classList.add('menuScrolled');  // Add the class if scrolled past threshold
+    } else {
+      navSection.classList.remove('menuScrolled'); // Remove the class if scrolled above threshold
+    }
+  });
+  
+
+
 // Function to add 'show' class to elements when they come into view
 function showOnScroll() {
     const elements = document.querySelectorAll('.show-on-scroll');
