@@ -10,7 +10,6 @@ a {
     color: rgb(186, 254, 255);
     text-decoration: none;
     font-size:30px;
-    box-shadow: inset 0 0 0 0 #54b3d6;
     margin: 0 -.25rem;
     padding: 0 .25rem;
     border-radius: 8px;
@@ -22,8 +21,6 @@ a {
     color: white;
     border-radius: 8px;
   }
-
-
 
 /*nav section */
 .navigation {
@@ -55,15 +52,19 @@ header .mobile  {
  }
 
 
- 
-/* RESPONSIVE RULES 
+
+/* RESPONSIVE RULES */
+
 @media screen and (max-width: 700px) {
+    .adopt {
+        font-size: 1em;
+    }
     .navigation .mobile {
         display:inline-block;
    }     
 }
 
-@media and (max-width:400px) {
+@media screen and (max-width:400px) {
     .navigation {
         display: block;
     body {
@@ -72,7 +73,7 @@ header .mobile  {
    } 
     
 }
-*/
+
 
 
 /* keyframes animation for scale-up */
@@ -96,17 +97,21 @@ header .mobile  {
 
 
 /* Hero Section Styles */
+
+body .hero{
+    background: url(../SaveStraws/images/seabackgroundstraw.png) ;
+    background-position: cover;
+    background-size: cover;
+   
+    z-index: 1;
+}
 .hero {
-    position: relative;
-    background-image: 
-    linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), /* transparent gradient */
-    url("images/quickfadeup.png");
-    url("images/sea.jpeg");
-background-size: cover;
+   
+    /* background-image: url("../SaveStraws/images/seabackground.png"); */
     background-size: cover;
     background-position: center;
-    width: 100%;
-    height: 100vh; /*size of the image */
+    width: auto;
+    height: 400vh; /*size of the image */
 }
 .hero::before {
     content: "";
@@ -115,9 +120,8 @@ background-size: cover;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image:url("images/quickfade.jpeg");
-    background-size: cover;
-    background-position: center;
+    margin-bottom: auto;
+
     
 }
 .hero-content h1{
@@ -128,7 +132,7 @@ background-size: cover;
     font-weight: 400;
     font-size: 125px;
     position: absolute;
-    top: 15%;
+    top: 20%;
     left: 20%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -141,39 +145,22 @@ background-size: cover;
 .hero-content p {
     
     font-family: "oswald", sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-style: bold;
-    font-size: 30px;
-    
+    font-size: 40px;
     color:#54b3d6;
-    padding-top: -180px;
     padding-bottom: 50px;
     position:relative;
     text-align: center;
-    z-index: 1;
+    z-index: 2;
+    margin-top: 100px;
     margin-left: 100px;
     margin-right: 100px;
+    background-color: none;
+    z-index: 2;
+    top: -2000px;
+margin-bottom: -500px;
 
-} 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 90px;
-    margin-left: 500px;
-z-index: 3;
-}   
-.grid-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 3;
-
-} 
-
-.grid-item img {
-    max-width: 950%;
-    height: auto;
-z-index: 3;
 } 
 
 
@@ -181,7 +168,7 @@ z-index: 3;
 
 /* Add a repeating background image */
 .history img {
-    background-image: url('images/mangojuice.png');
+    background-image: url('../SaveStraws/images/mangojuice.png');
     background-repeat: repeat;
 }
 
@@ -266,8 +253,13 @@ z-index: 3;
     border-radius: 20%;
     box-shadow: gray 0 0 10px;
 }   
+.issue-centered-image {
+    display: flex;
+    flex-direction: row;
+    padding: 200px; /*distance between nav and pictures */
+    flex-wrap: wrap; 
+} 
 
-/* adopt section*/
 .adopt {
     display: grid;
     grid-template-rows: auto 1fr auto; /* Header, Main Content, Footer */
@@ -350,7 +342,7 @@ button:hover {
     background-color: #0d6968;
 }
 .how-to-adopt {
-    background-color:#add8e6;
+    background-color:#54b3d6;
     border-radius: 10px;
     padding: 30px;
     color: #ffffff;
@@ -427,37 +419,23 @@ font-size: 60px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* Footer Styles */
 .footer {
-    background-color: #add8e6; /* Pale ocean color */
+    background-color: #54b3d6;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 2px;
     position: fixed;
     bottom: 0;
     width: 100%;
-    margin-top: 10%;
-    position:fixed;
-    z-index: 1;
+    z-index: 2;
 }
 
 .footer {
     font-family: "oswald", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 20px;
     
 }
-    
-   
+       
