@@ -1,0 +1,108 @@
+/*styles history page*/
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;  
+}
+
+.container.top{
+  background-image: url(/assets/images/cover-history.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -80px;
+}
+
+.bgWhite{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.subContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 120rem;
+  width: 100%;
+}
+
+
+
+h1 {
+  color: #0d6968;
+  font-size: 200px;
+  font-family: "omnium-tagline", sans-serif;
+  font-weight: 700;
+  text-shadow: 6px 6px #015571;
+  padding: 40px 0;
+}
+
+.subContainer h2 {
+  color: black;
+  font-size: 48px;
+  font-weight: 400;
+  font-family: "oswald", sans-serif;
+  font-style: bold;
+  margin: 12px 0;
+}
+
+.subContainer p {
+  color: #555555;
+  font-size: 32px;
+  font-weight: 300;
+  font-family: "oswald", sans-serif;
+  margin: 0px 0px 20px 20px;
+  text-align: justify;
+}
+
+@media (max-width:1200px) {
+  .subContainer{
+    padding: 0 20px;
+  }
+
+  h1 {    
+    font-size: 120px; 
+    text-shadow: 2px 2px #015571; 
+  }
+
+  .subContainer h2 {
+    
+    font-size: 24px;
+    
+  }
+  
+  .subContainer p {
+    
+    font-size: 20px;
+    
+  }
+
+}
+
+@media (max-width:440px) {
+  
+  .subContainer{
+    padding: 0 12px;
+  }
+
+  h1 {    
+    font-size: 60px;    
+  }
+
+  .subContainer h2 {
+    
+    font-size: 32px;
+    
+  }
+  
+  .subContainer p {
+    
+    font-size: 24px;
+    
+  }
+
+}
