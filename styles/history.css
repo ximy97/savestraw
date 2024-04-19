@@ -61,12 +61,12 @@ h1 {
 
 @media (max-width:1200px) {
   .subContainer{
-    padding: 0 20px;
+    padding: 0 40px;
   }
 
   h1 {    
-    font-size: 120px; 
-    text-shadow: 2px 2px #015571; 
+    font-size: 140px; 
+    text-shadow: 2px 2px #015571;     
   }
 
   .subContainer h2 {
