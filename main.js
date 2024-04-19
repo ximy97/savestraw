@@ -22,6 +22,10 @@ menuToggle.addEventListener("click", () => {
 });
 
 
+// cards isues page
+
+
+
 
 // Function to add 'show' class to elements when they come into view
 function showOnScroll() {
