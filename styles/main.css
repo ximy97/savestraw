@@ -91,6 +91,7 @@ li {
   font-family: "oswald", sans-serif;
   padding: 4px 16px; 
   border-radius: 8px;
+  text-shadow: 2px 2px #015571; 
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
@@ -200,6 +201,7 @@ li {
     font-family: "oswald", sans-serif;
     padding: 4px 16px;     
     border-radius: 8px;
+    text-shadow:none; 
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
   }
   

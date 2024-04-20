@@ -30,7 +30,9 @@
   width: 100%;
 }
 
-
+.subContainer.titles{
+  padding: 20px 0;
+}
 
 h1 {
   color: #0d6968;
@@ -39,6 +41,20 @@ h1 {
   font-weight: 700;
   text-shadow: 6px 6px #015571;
   padding: 40px 0;
+}
+
+.titleHistory{
+  color: black;
+  font-size: 32px;
+  font-family: "omnium-tagline", sans-serif;
+  font-weight: 600;
+  margin: 8px 0;  
+}
+
+.titleHistory span{
+  color: #0d6968;
+  font-size: 24px;
+  margin-right: 8px;
 }
 
 .subContainer h2 {
@@ -63,6 +79,18 @@ h1 {
   .subContainer{
     padding: 0 40px;
   }
+  .subContainer.titles{
+    padding: 20px 40px;
+  }
+
+  .titleHistory{    
+    font-size: 28px;     
+  }
+  
+  .titleHistory span{    
+    font-size: 16px;
+    
+  }
 
   h1 {    
     font-size: 140px; 
@@ -83,10 +111,28 @@ h1 {
 
 }
 
+
+/*media query mobile*/
+
 @media (max-width:440px) {
   
   .subContainer{
     padding: 0 12px;
+  }
+
+  .subContainer.titles{
+    padding: 20px 12px;
+  }
+
+  .titleHistory{
+    
+    font-size: 24px;
+    
+    margin: 4px 0;  
+  }
+  
+  .titleHistory span{    
+    font-size: 12px;    
   }
 
   h1 {    

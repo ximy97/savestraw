@@ -84,15 +84,12 @@ figure p {
   text-align: justify;
 }
 
-/*line*/
-
-hr{
-  border: none;
-  border-bottom: solid 2px #124455;
-  margin: 12px 40px;
-}
 
 /*turtle section*/
+
+.turtle{
+  padding-top: 20px;
+}
 
 #text-turtle{
   color: black;
@@ -125,5 +122,6 @@ hr{
   .subContainer{
     padding: 0 12px;
   } 
+  
 
 }

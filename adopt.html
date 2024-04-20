@@ -9,15 +9,13 @@
   <!--
             <link rel="stylesheet" href="/styles/styles.css"> -->
   <link rel="stylesheet" href="/styles/main.css">
-  <link rel="stylesheet" href="/styles/home.css">
+  <link rel="stylesheet" href="/styles/adopt.css">
   <title>Save The Plastic Straws</title>
   <meta property="og:image" content="pierregreen.jpg">
   <link rel="stylesheet" href="/fontawesome-free-6.5.2-web/css/all.css">
 </head>
 
 <body>
-
-  <!-- Nav Section -->
   <!-- Nav Section -->
   <header class="navSection menuScrolled">
     <nav class="navigation">
@@ -29,53 +27,60 @@
         <li><a href="history.html" class="btnMenu ">History</a></li>
         <li><a href="issues.html" class="btnMenu">Why Plastic?</a></li>
         <li><a href="adopt.html" class="btnMenu active">Adopt a Plastic Straw</a></li>
+        <li><a href="credits.html" class="btnMenu">Credits</a></li>
       </ul>
     </nav>
   </header>
 
-  <div class="adopt">
-    <header>
-      <h1>Adopt a Plastic Straw</h1>
-    </header>
-  </div>
-
-  <main class="adopt">
-    <section class="adopt-section">
-      <img src="images/cocktailstraws.jpeg" alt="CocktailsStraw">
-      <p>Are you concerned about the well-being of plastic straws? You can make a difference by adopting a plastic straw
-        today!</p>
-      <button id="adoptButton">Adopt Now</button>
+  <main>
+    <section class="container top">
+      <div class="subContainer">  
+        <h1>Adopt a Plastic Straw</h1>  
+      </div>
     </section>
-    <section class="how-to-adopt">
-      <h2>How to Adopt</h2>
-      <p>Follow these simple steps to adopt your very own plastic straw:</p>
-      <ol>
-        <li>Choose your preferred straw color.</li>
-        <li>Fill out the adoption form.</li>
-        <li>Make a donation to support plastic straw conservation efforts.</li>
-      </ol>
+
+    <section class="container">
+      <div class="subContainer">
+        <img src="/assets/images/cocktailstraws.jpeg" alt="CocktailsStraw">
+        <p>Are you concerned about the well-being of plastic straws? <br> You can make a difference by adopting a plastic
+          straw
+          today!</p>
+        <button id="adoptButton">Adopt Now</button>
+      </div>
     </section>
-    <section class="adoption-form">
-      <h2>Adoption Form</h2>
-      <form>
-        <label for="color">Preferred Straw Color:</label>
-        <input type="text" id="color" name="color" required>
 
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <button type="submit">SUBMIT</button>
-      </form>
+    <section class="container">
+      <div class="subContainer">
+        <h2>How to Adopt</h2>
+        <p>Follow these simple steps to adopt your very own plastic straw:</p>
+        <ol>
+          <li>Choose your preferred straw color.</li>
+          <li>Fill out the adoption form.</li>
+          <li>Make a donation to support plastic straw conservation efforts.</li>
+        </ol>
+      </div>
     </section>
+
+    <section class="container">
+      <div class="subContainer">
+        <h2 id="titleForm">Adoption Form</h2>
+        <form>
+          <label for="color">Preferred Straw Color:</label>
+          <input type="text" id="color" name="color" required placeholder="write here">
+  
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required placeholder="John Doe">
+  
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required placeholder="email@domain.com">
+  
+          <button id="buttonSubmit" type="submit">SUBMIT</button>
+        </form>
+      </div>
+      
+    </section>
+
   </main>
-
-
-
-
-
 
 
   <audio autoplay loop>
@@ -87,7 +92,7 @@
   <footer id="footer" class="footer">
     <p>2024 | © Save The Straws</p>
   </footer>
-  
+
   <!--js import-->
   <script src="/main.js"></script>
 </body>

@@ -22,31 +22,36 @@ menuToggle.addEventListener("click", () => {
 });
 
 
-// cards isues page
+// scroll titles history
 
+// Obtener todos los enlaces con la clase "titleHistory"
+const titleLinks = document.querySelectorAll('.titleHistory');
 
+// Agregar un evento de clic a cada enlace
+titleLinks.forEach(link => {
+  link.addEventListener('click', (event) => {
+    event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
 
+    const targetId = event.currentTarget.getAttribute('href'); // Obtener el ID del objetivo
+    const targetElement = document.querySelector(targetId); // Obtener el elemento objetivo
 
-// Function to add 'show' class to elements when they come into view
-function showOnScroll() {
-  const elements = document.querySelectorAll(".show-on-scroll");
-  elements.forEach((element) => {
-    const elementPosition = element.getBoundingClientRect().top;
-    const viewportHeight = window.innerHeight;
-    if (elementPosition < viewportHeight * 0.75) {
-      element.classList.add("show");
-    }
+    // Realizar el desplazamiento suave
+    targetElement.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
   });
-}
+});
 
-// Scroll to adoption form when the button is clicked
-//document.querySelector('#adoptButton').addEventListener('click', function() {
-//    const adoptionForm = document.querySelector('.adoption-form');
-//    adoptionForm.scrollIntoView({ behavior: 'smooth' });
-//});
 
-// Add event listener to call showOnScroll function when page is scrolled
-window.addEventListener("scroll", showOnScroll);
+// scroll adopt form
 
-// Call showOnScroll function on page load to check if elements are in view
-showOnScroll();
+const adoptButton = document.getElementById('adoptButton');
+const titleForm = document.getElementById('titleForm');
+
+adoptButton.addEventListener('click', () => {
+  titleForm.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  });
+});
